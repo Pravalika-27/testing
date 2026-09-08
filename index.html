@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Property Expert · Sandalwood Plantation</title>
-  <meta name="description" content="Property Expert – premium real estate & sandalwood plantation investment opportunities.">
+  <title>Property Expert | Your Property, Our Expertise</title>
+  <meta name="description" content="Property Expert - premium real estate projects, investment opportunities and site visit assistance.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -184,7 +184,7 @@
     .sreeimg {
       height: 430px;
       border-radius: 18px;
-      background: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=85') center/cover;
+      background: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80') center/cover;
       box-shadow: 0 12px 30px rgba(0,0,0,0.3);
     }
     .sree h2 { font-size: 45px; line-height: 1.1; margin: 8px 0 15px; }
@@ -249,16 +249,6 @@
     }
     .toast.show { transform: translateX(-50%) translateY(0); }
 
-    /* Sandalwood card */
-    .sandalwood-card {
-      background: #f0f3e9;
-      border: 2px solid #b99b5c;
-    }
-    .sandalwood-card .tag {
-      background: #b99b5c;
-      color: #1d2c1d;
-    }
-
     @media (max-width: 950px) {
       nav { display: none; }
       .menu { display: block; }
@@ -289,7 +279,7 @@
     <a class="logo" href="#">PROPERTY <span>EXPERT</span></a>
     <nav>
       <a href="#projects">Projects</a>
-      <a href="#sandalwood">Sandalwood</a>
+      <a href="#sreegandham">Sreegandham</a>
       <a href="#why">Why Us</a>
       <a href="#investment">Investment</a>
       <a href="#reviews">Reviews</a>
@@ -300,15 +290,15 @@
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
   <div class="container hero-content">
     <div class="pill">TRUST • TRANSPARENCY • EXPERTISE</div>
-    <h1>Your Property.<br><span>Sandalwood &amp; More.</span></h1>
-    <p>Discover premium real estate and sandalwood plantation opportunities — from discovery to site visits and after-sales support.</p>
+    <h1>Your Property.<br><span>Our Expertise.</span></h1>
+    <p>Discover carefully selected real-estate projects and investment opportunities with Property Expert — from property discovery to site visits and customer support.</p>
     <div class="actions">
       <a class="btn btn-gold" href="#projects">Explore Projects</a>
-      <a class="btn btn-white" href="#sandalwood">Sandalwood Plantation</a>
-      <a class="btn btn-green" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20am%20interested." target="_blank">WhatsApp Expert</a>
+      <a class="btn btn-white" href="#visit">Book a Site Visit</a>
+      <a class="btn btn-green" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20am%20interested%20in%20your%20projects." target="_blank">WhatsApp Expert</a>
     </div>
   </div>
 </section>
@@ -316,7 +306,7 @@
 <div class="container search">
   <div class="searchbox">
     <input id="q" placeholder="Search project or location">
-    <select id="type"><option value="">Property Type</option><option>Open Plot</option><option>Residential</option><option>Farm Land</option><option>Sandalwood</option></select>
+    <select id="type"><option value="">Property Type</option><option>Open Plot</option><option>Residential</option><option>Farm Land</option><option>Commercial</option></select>
     <select id="budget"><option value="">Budget</option><option value="10">Under ₹10 Lakhs</option><option value="20">Under ₹20 Lakhs</option><option value="50">Under ₹50 Lakhs</option></select>
     <input id="size" placeholder="Plot size e.g. 200 Sq.Yds">
     <button class="btn btn-green" onclick="filterProjects()">Search</button>
@@ -328,7 +318,7 @@
     <div class="stat"><h3>10+</h3><p>Projects</p></div>
     <div class="stat"><h3>500+</h3><p>Customers</p></div>
     <div class="stat"><h3>1000+</h3><p>Acres Developed</p></div>
-    <div class="stat"><h3>95%</h3><p>Satisfaction</p></div>
+    <div class="stat"><h3>95%</h3><p>Customer Satisfaction</p></div>
   </div>
 </div>
 
@@ -336,11 +326,10 @@
   <div class="container">
     <div class="heading">
       <small>OUR PROJECTS</small>
-      <h2>Featured Opportunities</h2>
-      <p>Including premium sandalwood plantation — a sustainable investment.</p>
+      <h2>Featured Property Opportunities</h2>
+      <p>Explore selected projects. Replace the demo project information below with your verified project details.</p>
     </div>
     <div class="grid3" id="projectGrid">
-      <!-- Existing cards -->
       <article class="card project" data-search="green valley hyderabad" data-type="Open Plot" data-price="15">
         <div class="project-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85"><span class="tag">FEATURED</span></div>
         <div class="body"><h3>Green Valley Estates</h3><div class="loc">📍 Hyderabad, Telangana</div><div class="price">Starting ₹15 Lakhs</div><div class="meta"><span>121–300 Sq.Yds</span><span>Open Plot</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Green%20Valley%20Estates%20details." target="_blank">WhatsApp</a></div></div>
@@ -349,73 +338,58 @@
         <div class="project-img"><img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fit=crop&w=1000&q=85"><span class="tag">NEW</span></div>
         <div class="body"><h3>Royal County</h3><div class="loc">📍 Karimnagar, Telangana</div><div class="price">Starting ₹8 Lakhs</div><div class="meta"><span>150–400 Sq.Yds</span><span>Open Plot</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Royal%20County%20details." target="_blank">WhatsApp</a></div></div>
       </article>
-      <!-- New SANDALWOOD card (replacing image.png concept) -->
-      <article class="card sandalwood-card project" data-search="sandalwood plantation" data-type="Sandalwood" data-price="25">
-        <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=85" alt="Sandalwood plantation">
-          <span class="tag">🌿 POPULAR</span>
-        </div>
-        <div class="body">
-          <h3>Sandalwood Plantation</h3>
-          <div class="loc">📍 Telangana · Agri-forest</div>
-          <div class="price">Starting ₹25 Lakhs</div>
-          <div class="meta"><span>1–5 Acres</span><span>Sandalwood</span></div>
-          <div class="cardlinks">
-            <a href="#sandalwood">Learn More</a>
-            <a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Sandalwood%20details." target="_blank">WhatsApp</a>
-          </div>
-        </div>
+      <article class="card project" data-search="nature farms warangal" data-type="Farm Land" data-price="6">
+        <div class="project-img"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=85"><span class="tag">POPULAR</span></div>
+        <div class="body"><h3>Nature Farms</h3><div class="loc">📍 Warangal, Telangana</div><div class="price">Starting ₹6 Lakhs</div><div class="meta"><span>200–500 Sq.Yds</span><span>Farm Land</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Nature%20Farms%20details." target="_blank">WhatsApp</a></div></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- SANDALWOOD SECTION (replacing previous sreegandham with enhanced sandalwood content) -->
-<section class="sree" id="sandalwood">
+<!-- Sreegandham section – image updated to sandalwood trees, text refined -->
+<section class="sree" id="sreegandham">
   <div class="container sreegrid">
     <div class="sreeimg"></div>
     <div>
-      <small style="color:#e0b75e; font-weight:900; letter-spacing:1.5px;">SUSTAINABLE INVESTMENT</small>
-      <h2>Sandalwood Plantation</h2>
-      <p>Invest in premium sandalwood (East Indian) with high market value. Our plantation projects offer transparent ownership, legal documentation, and expert cultivation support.</p>
+      <small style="color:#e0b75e;font-weight:900;letter-spacing:1.5px">INVESTMENT OPPORTUNITY</small>
+      <h2>Sreegandham</h2>
+      <p>Present Sreegandham as a featured investment opportunity with verified project information, location advantages, plot details, pricing and documentation.</p>
       <div class="ticks">
-        <div>✓ High-value timber</div>
-        <div>✓ Legal &amp; clear title</div>
-        <div>✓ 10–15 year maturity</div>
-        <div>✓ End-to-end management</div>
-        <div>✓ Buyback assistance</div>
-        <div>✓ Site visit &amp; demo</div>
+        <div>✓ Project Details</div>
+        <div>✓ Location Advantage</div>
+        <div>✓ Site Visit Support</div>
+        <div>✓ Documentation Guidance</div>
       </div>
-      <a class="btn btn-gold" href="#visit">Enquire about Sandalwood</a>
+      <a class="btn btn-gold" href="#visit">Enquire About Sreegandham</a>
     </div>
   </div>
 </section>
 
 <section id="why">
   <div class="container">
-    <div class="heading"><small>WHY PROPERTY EXPERT</small><h2>Built Around Trust &amp; Transparency</h2><p>We help you make informed property and plantation decisions.</p></div>
+    <div class="heading"><small>WHY PROPERTY EXPERT</small><h2>Built Around Customer Trust</h2><p>We help customers make informed property decisions with clear information and support.</p></div>
     <div class="featuregrid">
-      <div class="feature"><div class="ico">🌳</div><h3>Sandalwood Expertise</h3><p>Specialised knowledge in sandalwood plantation and legal compliance.</p></div>
-      <div class="feature"><div class="ico">📋</div><h3>Transparency</h3><p>Clear pricing, documentation and project details.</p></div>
-      <div class="feature"><div class="ico">👨‍💼</div><h3>Expert Guidance</h3><p>Personalised support for property &amp; plantation.</p></div>
-      <div class="feature"><div class="ico">📍</div><h3>Site Visits</h3><p>On-ground visits to plots and plantation sites.</p></div>
-      <div class="feature"><div class="ico">📑</div><h3>Documentation</h3><p>Guidance on title deeds, approvals &amp; agreements.</p></div>
-      <div class="feature"><div class="ico">🤝</div><h3>After-Sales Support</h3><p>Long-term assistance even after booking.</p></div>
+      <div class="feature"><div class="ico">🔍</div><h3>Verified Opportunities</h3><p>Present projects with accurate, verified information.</p></div>
+      <div class="feature"><div class="ico">📋</div><h3>Transparency</h3><p>Clear project information, pricing and documentation.</p></div>
+      <div class="feature"><div class="ico">👨‍💼</div><h3>Expert Guidance</h3><p>Personal assistance based on your property requirements.</p></div>
+      <div class="feature"><div class="ico">📍</div><h3>Site Visits</h3><p>Easy site-visit coordination and on-ground assistance.</p></div>
+      <div class="feature"><div class="ico">📑</div><h3>Documentation</h3><p>Guidance to help customers understand important documents.</p></div>
+      <div class="feature"><div class="ico">🤝</div><h3>After-Sales Support</h3><p>Continue supporting customers after booking.</p></div>
     </div>
   </div>
 </section>
 
 <section class="invest" id="investment">
   <div class="container">
-    <div class="heading"><small>PLAN YOUR INVESTMENT</small><h2>Investment Calculator</h2><p>Illustrative estimate — property &amp; sandalwood values can vary.</p></div>
+    <div class="heading"><small>PLAN YOUR INVESTMENT</small><h2>Property Investment Calculator</h2><p>Illustrative estimate only — property appreciation is not guaranteed.</p></div>
     <div class="investgrid">
-      <div><h2 style="font-size:42px">Grow with confidence.<br>Invest wisely.</h2><p style="margin-top:12px;color:#d5e0d8">Evaluate opportunities across real estate and sandalwood plantations.</p></div>
+      <div><h2 style="font-size:42px">Invest with information.<br>Decide with confidence.</h2><p style="margin-top:12px;color:#d5e0d8">Compare property opportunities, understand your budget and visit projects before making a decision.</p></div>
       <div class="investbox">
-        <div class="field"><label>Investment Amount (₹)</label><input id="amount" type="number" value="2500000"></div>
-        <div class="field"><label>Expected Annual Appreciation (%)</label><input id="rate" type="number" value="12"></div>
+        <div class="field"><label>Investment Amount (₹)</label><input id="amount" type="number" value="1000000"></div>
+        <div class="field"><label>Estimated Annual Appreciation (%)</label><input id="rate" type="number" value="8"></div>
         <div class="field"><label>Holding Period (Years)</label><input id="years" type="number" value="10"></div>
         <button class="btn btn-green" onclick="calc()">Calculate</button>
-        <div class="result">Estimated future value<b id="future">₹77,63,000</b><div class="note">Illustrative calculation. Actual returns may differ.</div></div>
+        <div class="result">Estimated future value<b id="future">₹21,58,925</b><div class="note">Illustrative calculation. Actual property values may vary.</div></div>
       </div>
     </div>
   </div>
@@ -430,35 +404,31 @@
       <div class="step"><div class="num">3</div><h4>Site Visit</h4></div>
       <div class="step"><div class="num">4</div><h4>Verify Documents</h4></div>
       <div class="step"><div class="num">5</div><h4>Select Property</h4></div>
-      <div class="step"><div class="num">6</div><h4>Booking &amp; Support</h4></div>
+      <div class="step"><div class="num">6</div><h4>Booking & Support</h4></div>
     </div>
   </div>
 </section>
 
 <section id="reviews">
   <div class="container">
-    <div class="heading"><small>CUSTOMER EXPERIENCE</small><h2>Our Customers. Our Reputation.</h2><p>Real feedback from property and plantation investors.</p></div>
+    <div class="heading"><small>CUSTOMER EXPERIENCE</small><h2>Our Customers. Our Reputation.</h2><p>Use genuine customer reviews and photos here.</p></div>
     <div class="grid3">
-      <div class="card review"><div class="stars">★★★★★</div><p>“The sandalwood plantation tour was eye-opening. Great support.”</p><div class="person">Ravi Kumar<small>Telangana</small></div></div>
-      <div class="card review"><div class="stars">★★★★★</div><p>“Transparent process and clear documentation. Highly recommend.”</p><div class="person">Anita Reddy<small>Hyderabad</small></div></div>
-      <div class="card review"><div class="stars">★★★★★</div><p>“Professional team. They helped us understand the plantation lifecycle.”</p><div class="person">Suresh Babu<small>Karimnagar</small></div></div>
+      <div class="card review"><div class="stars">★★★★★</div><p>“The team explained the project clearly and supported us during the site visit.”</p><div class="person">Customer Name<small>Hyderabad</small></div></div>
+      <div class="card review"><div class="stars">★★★★★</div><p>“Professional communication and helpful property guidance.”</p><div class="person">Customer Name<small>Karimnagar</small></div></div>
+      <div class="card review"><div class="stars">★★★★★</div><p>“Good support and clear communication throughout the enquiry.”</p><div class="person">Customer Name<small>Telangana</small></div></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="cta">
-      <h2>Ready to invest in Sandalwood?</h2>
-      <p>Request a site visit or property brochure. Our experts are here to assist.</p>
-      <a class="btn btn-gold" href="#visit">Get Sandalwood Assistance</a>
-    </div>
+    <div class="cta"><h2>Looking for the Right Property?</h2><p>Tell us your budget and requirements. Our team will help you explore suitable opportunities.</p><a class="btn btn-gold" href="#visit">Get Property Assistance</a></div>
   </div>
 </section>
 
 <section id="contact">
   <div class="container">
-    <div class="heading"><small>CONTACT PROPERTY EXPERT</small><h2>Book Your Site Visit</h2><p>Send your requirement — we’ll get back within 24 hours.</p></div>
+    <div class="heading"><small>CONTACT PROPERTY EXPERT</small><h2>Book Your Site Visit</h2><p>Send your requirement and our team will contact you.</p></div>
     <div class="contactgrid">
       <div class="contactbox" id="visit">
         <form onsubmit="submitLead(event)">
@@ -466,22 +436,22 @@
           <input id="phone" required placeholder="Mobile Number" type="tel">
           <input id="email" placeholder="Email Address" type="email">
           <select id="project">
-            <option>Sandalwood Plantation</option>
+            <option>Sreegandham</option>
             <option>Green Valley Estates</option>
             <option>Royal County</option>
             <option>Nature Farms</option>
           </select>
           <input id="date" type="date">
           <textarea id="message" placeholder="Your requirements"></textarea>
-          <button class="btn btn-green">Submit &amp; WhatsApp</button>
+          <button class="btn btn-green">Submit & WhatsApp</button>
         </form>
       </div>
       <div class="contactbox contactinfo">
         <h3>PROPERTY EXPERT</h3>
         <div><strong>📞 Phone</strong><a href="tel:+917981904164">7981904164</a></div>
-        <div><strong>💬 WhatsApp</strong><a href="https://wa.me/917981904164" target="_blank">Chat with Expert</a></div>
+        <div><strong>💬 WhatsApp</strong><a href="https://wa.me/917981904164" target="_blank">Chat with Property Expert</a></div>
         <div><strong>✉ Email</strong><a href="mailto:propertyexpert26@gmail.com">propertyexpert26@gmail.com</a></div>
-        <div><strong>📍 Service Area</strong>Telangana &amp; beyond</div>
+        <div><strong>📍 Service Area</strong>Telangana</div>
       </div>
     </div>
   </div>
@@ -490,17 +460,17 @@
 <footer>
   <div class="container">
     <div class="footgrid">
-      <div><h3>PROPERTY EXPERT</h3><p>Your Property, Our Expertise.<br>Sandalwood &amp; Real Estate.</p><p style="margin-top:8px;font-size:12px">Discover. Verify. Invest. Grow.</p></div>
-      <div><h3>Explore</h3><a href="#projects">Projects</a><a href="#sandalwood">Sandalwood</a><a href="#investment">Investment</a></div>
-      <div><h3>Support</h3><a href="#visit">Site Visit</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+      <div><h3>PROPERTY EXPERT</h3><p>Your Property, Our Expertise.</p><p style="margin-top:8px;font-size:12px">Discover. Verify. Invest. Grow.</p></div>
+      <div><h3>Explore</h3><a href="#projects">Projects</a><a href="#sreegandham">Sreegandham</a><a href="#investment">Investment</a></div>
+      <div><h3>Support</h3><a href="#visit">Site Visit</a><a href="#reviews">Customer Reviews</a><a href="#contact">Contact</a></div>
       <div><h3>Legal</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div>
     </div>
-    <div class="bottom">© 2026 Property Expert. All Rights Reserved. Project details, prices and availability subject to change. Verify all approvals.</div>
+    <div class="bottom">© 2026 Property Expert. All Rights Reserved. Property prices, availability and project information are subject to change. Verify applicable approvals and documents before purchase.</div>
   </div>
 </footer>
 
 <a class="float" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20property%20details." target="_blank">☏</a>
-<div class="toast" id="toast">Preparing your enquiry…</div>
+<div class="toast" id="toast">Request prepared. Opening WhatsApp…</div>
 
 <script>
   function calc() {
@@ -532,13 +502,13 @@
     const pr = document.getElementById('project').value;
     const d = document.getElementById('date').value;
     const m = document.getElementById('message').value;
-    const msg = `Hi Property Expert,%0A%0AEnquiry%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AEmail: ${encodeURIComponent(em)}%0AProject: ${encodeURIComponent(pr)}%0ADate: ${encodeURIComponent(d)}%0ARequirements: ${encodeURIComponent(m)}`;
+    const msg = `Hi Property Expert,%0A%0ASite Visit / Property Enquiry%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AEmail: ${encodeURIComponent(em)}%0AProject: ${encodeURIComponent(pr)}%0ADate: ${encodeURIComponent(d)}%0ARequirements: ${encodeURIComponent(m)}`;
     const toast = document.getElementById('toast');
     toast.classList.add('show');
     setTimeout(() => {
       toast.classList.remove('show');
       window.open('https://wa.me/917981904164?text=' + msg, '_blank');
-    }, 600);
+    }, 500);
   }
 
   function toggleMenu() {
@@ -559,7 +529,6 @@
     }
   }
 
-  // initial calc
   calc();
 </script>
 </body>
