@@ -48,7 +48,10 @@ section{padding:82px 0}
 .meta{display:flex;gap:12px;font-size:12px;color:#68746c;margin:13px 0 17px}.cardlinks{display:flex;gap:8px}.cardlinks a{flex:1;text-align:center;padding:10px;border-radius:7px;font-size:12px;font-weight:800;background:#edf3ee;color:var(--green)}
 .invest{background:var(--green);color:#fff}.invest .heading p{color:#d2dfd6}.investgrid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.investbox{background:#fff;color:var(--ink);padding:28px;border-radius:15px}.field{margin-bottom:15px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.result{background:#edf4ee;padding:18px;border-radius:10px;margin-top:18px}.result b{display:block;font-size:30px;color:var(--green)}.note{font-size:11px;color:#707970;margin-top:8px}
 .featuregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;padding:25px;border-radius:13px;border:1px solid #e8e5dd}.feature .ico{font-size:28px;margin-bottom:10px}.feature p{font-size:13px;color:var(--muted)}
-.videosec{padding:0 0 82px}.videowrap{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px #00000020}.videowrap video{width:100%;display:block;max-height:560px;object-fit:cover;background:#000}
+.videosec{padding:56px 0}.videowrap{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px #00000020;max-width:480px;margin:0 auto}.videowrap video{width:100%;display:block;max-height:340px;object-fit:cover;background:#000}
+.floatgroup{position:fixed;right:18px;bottom:18px;z-index:100;display:flex;flex-direction:column;gap:12px}
+.floatgroup .float{position:static;box-shadow:0 10px 25px #0003}
+.insta-float{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);}
 .sree{background:linear-gradient(120deg,#102f20,#1c593c);color:#fff}.sreegrid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.sreeimg{height:430px;border-radius:18px;background:url('https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fit=crop&w=1200&q=85') center/cover}.sree h2{font-size:45px;line-height:1.1;margin:8px 0 15px}.sree p{color:#d8e4dc}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}.ticks div{background:#ffffff10;border:1px solid #ffffff1c;padding:11px;border-radius:8px;font-size:13px}
 .steps{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.step{background:#fff;border:1px solid #e6e4dd;border-radius:11px;padding:20px 12px;text-align:center}.num{margin:auto auto 10px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:900}.step h4{font-size:13px}
 .review{padding:25px}.stars{color:#c49a42;letter-spacing:2px}.review p{font-size:14px;color:#5d695f;margin:12px 0 18px}.person{font-weight:800}.person small{display:block;color:#7a837d;font-weight:500}
@@ -91,11 +94,6 @@ footer{background:#0b2618;color:#c8d3cb;padding:50px 0 22px}.footgrid{display:gr
 <div class="stat"><h3>10+</h3><p>Projects</p></div><div class="stat"><h3>500+</h3><p>Customers</p></div><div class="stat"><h3>1000+</h3><p>Acres Developed</p></div><div class="stat"><h3>95%</h3><p>Customer Satisfaction</p></div>
 </div></div>
 
-<section class="videosec"><div class="container">
-<div class="heading"><small>WATCH</small><h2>A Quick Look at Property Expert</h2></div>
-<div class="videowrap"><video src="welcome.mp4" autoplay muted loop playsinline controls></video></div>
-</div></section>
-
 <section id="projects"><div class="container">
 <div class="heading"><small>OUR PROJECTS</small><h2>Featured Property Opportunities</h2><p>Explore selected projects. Replace the demo project information below with your verified project details.</p></div>
 <div class="grid3" id="projectGrid">
@@ -121,6 +119,11 @@ footer{background:#0b2618;color:#c8d3cb;padding:50px 0 22px}.footgrid{display:gr
 </article>
 
 </div></div></section>
+
+<section class="videosec"><div class="container">
+<div class="heading"><small>WATCH</small><h2>A Quick Look at Property Expert</h2></div>
+<div class="videowrap"><video src="welcome.mp4" autoplay muted loop playsinline controls></video></div>
+</div></section>
 
 <section class="sree" id="future-city"><div class="container sreegrid">
 <div class="sreeimg"></div><div><small style="color:#e0b75e;font-weight:900;letter-spacing:1.5px">UPCOMING PROJECT</small><h2>Future City</h2><p>Future City is an upcoming open-plot project in a prime Mancherial location, offering strong growth potential with clear project information, location advantages, plot details, pricing and documentation.</p>
@@ -161,7 +164,10 @@ footer{background:#0b2618;color:#c8d3cb;padding:50px 0 22px}.footgrid{display:gr
 </div></div></section>
 
 <footer><div class="container"><div class="footgrid"><div><h3>PROPERTY EXPERT</h3><p>Your Property, Our Expertise.</p><p style="margin-top:8px;font-size:12px">Discover. Verify. Invest. Grow.</p></div><div><h3>Explore</h3><a href="#projects">Projects</a><a href="#future-city">Future City</a><a href="#investment">Investment</a></div><div><h3>Support</h3><a href="#visit">Site Visit</a><a href="#reviews">Customer Reviews</a><a href="#contact">Contact</a></div><div><h3>Legal</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div></div><div class="bottom">© 2026 Property Expert. All Rights Reserved. Property prices, availability and project information are subject to change. Verify applicable approvals and documents before purchase.</div></div></footer>
+<div class="floatgroup">
+<a class="float insta-float" href="https://www.instagram.com/the_real_vivek_narayan?stkn=MTBqZDR6M2JhajJucg==" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
 <a class="float" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20property%20details." target="_blank">☏</a>
+</div>
 <div class="toast" id="toast">Request prepared. Opening WhatsApp…</div>
 
 <script>
