@@ -1,181 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Property Expert | Your Property, Our Expertise</title>
-<meta name="description" content="Property Expert - premium real estate projects, investment opportunities and site visit assistance.">
-<style>
-:root{--green:#123c29;--green2:#1b5639;--gold:#c9a24b;--cream:#f7f5ef;--ink:#18231d;--muted:#66736b;--white:#fff}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid #e9e7df}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:900;letter-spacing:.5px;font-size:23px;color:var(--green)}
-.logo span{color:var(--gold)}
-nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700}
-nav a:hover{color:var(--gold)}
-.menu{display:none;font-size:27px}
-.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;padding:13px 20px;font-weight:800;cursor:pointer}
-.btn-gold{background:var(--gold);color:#15130e}.btn-green{background:var(--green);color:#fff}.btn-white{background:#fff;color:var(--green)}
-.hero{min-height:650px;display:flex;align-items:center;background:linear-gradient(90deg,#071b10df,#071b1050),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover}
-.hero-content{color:#fff;max-width:760px;padding:80px 0}
-.pill{display:inline-block;border:1px solid #ffffff55;background:#ffffff16;padding:7px 13px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:18px}
-h1{font-size:clamp(44px,7vw,76px);line-height:1.02;margin-bottom:20px}
-h1 span{color:#e2bd66}
-.hero p{font-size:19px;color:#e9f0eb;max-width:650px;margin-bottom:28px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.search{margin-top:-45px;position:relative}
-.searchbox{background:#fff;padding:20px;border-radius:15px;box-shadow:0 15px 45px #00000018;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr auto;gap:10px}
-input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ddd9cf;border-radius:8px;background:#fff;font:inherit;outline:none}
-section{padding:82px 0}
-.heading{text-align:center;max-width:720px;margin:0 auto 42px}
-.heading small{font-weight:900;color:#a87f2e;letter-spacing:1.5px}
-.heading h2{font-size:39px;line-height:1.15;margin:8px 0 10px}
-.heading p{color:var(--muted)}
-.stats{background:#fff;padding:32px 0}
-.statgrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
-.stat h3{font-size:31px;color:var(--green)}.stat p{font-size:13px;color:var(--muted)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid #e7e4dc;border-radius:15px;overflow:hidden;transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px #00000012}
-.project-img{height:230px;position:relative}.project-img img{width:100%;height:100%;object-fit:cover}
-.tag{position:absolute;top:14px;left:14px;background:var(--green);color:#fff;padding:6px 9px;border-radius:6px;font-size:11px;font-weight:900}
-.body{padding:20px}.body h3{font-size:22px}.loc{font-size:13px;color:var(--muted);margin:3px 0 12px}.price{font-weight:900;color:var(--green);font-size:18px}
-.meta{display:flex;gap:12px;font-size:12px;color:#68746c;margin:13px 0 17px}.cardlinks{display:flex;gap:8px}.cardlinks a{flex:1;text-align:center;padding:10px;border-radius:7px;font-size:12px;font-weight:800;background:#edf3ee;color:var(--green)}
-.invest{background:var(--green);color:#fff}.invest .heading p{color:#d2dfd6}.investgrid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.investbox{background:#fff;color:var(--ink);padding:28px;border-radius:15px}.field{margin-bottom:15px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.result{background:#edf4ee;padding:18px;border-radius:10px;margin-top:18px}.result b{display:block;font-size:30px;color:var(--green)}.note{font-size:11px;color:#707970;margin-top:8px}
-.featuregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;padding:25px;border-radius:13px;border:1px solid #e8e5dd}.feature .ico{font-size:28px;margin-bottom:10px}.feature p{font-size:13px;color:var(--muted)}
-.videosec{padding:56px 0}.videowrap{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px #00000020;max-width:480px;margin:0 auto}.videowrap video{width:100%;display:block;max-height:340px;object-fit:cover;background:#000}
-.floatgroup{position:fixed;right:18px;bottom:18px;z-index:100;display:flex;flex-direction:column;gap:12px}
-.floatgroup .float{position:static;box-shadow:0 10px 25px #0003}
-.insta-float{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);}
-.sree{background:linear-gradient(120deg,#102f20,#1c593c);color:#fff}.sreegrid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.sreeimg{height:430px;border-radius:18px;background:url('https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fit=crop&w=1200&q=85') center/cover}.sree h2{font-size:45px;line-height:1.1;margin:8px 0 15px}.sree p{color:#d8e4dc}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}.ticks div{background:#ffffff10;border:1px solid #ffffff1c;padding:11px;border-radius:8px;font-size:13px}
-.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.step{background:#fff;border:1px solid #e6e4dd;border-radius:11px;padding:20px 12px;text-align:center}.num{margin:auto auto 10px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:900}.step h4{font-size:13px}
-.review{padding:25px}.stars{color:#c49a42;letter-spacing:2px}.review p{font-size:14px;color:#5d695f;margin:12px 0 18px}.person{font-weight:800}.person small{display:block;color:#7a837d;font-weight:500}
-.cta{border-radius:18px;padding:70px 25px;text-align:center;color:#fff;background:linear-gradient(90deg,#123c29ed,#123c2990),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85') center/cover}.cta h2{font-size:42px;margin-bottom:10px}.cta p{color:#e0e9e2;margin-bottom:24px}
-.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contactbox{background:#fff;border:1px solid #e7e4dc;border-radius:14px;padding:28px}.contactbox form{display:grid;gap:11px}.contactinfo div{padding:17px 0;border-bottom:1px solid #eee}.contactinfo strong{display:block}
-footer{background:#0b2618;color:#c8d3cb;padding:50px 0 22px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.footgrid h3{color:#fff;margin-bottom:12px}.footgrid a{display:block;font-size:13px;margin:8px 0;color:#c0cbc3}.bottom{border-top:1px solid #ffffff16;margin-top:30px;padding-top:18px;text-align:center;font-size:11px}
-.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:26px;z-index:100;box-shadow:0 10px 25px #0003}
-.toast{position:fixed;left:50%;bottom:25px;transform:translateX(-50%) translateY(100px);background:#123c29;color:#fff;padding:13px 18px;border-radius:9px;z-index:200;transition:.3s;font-size:13px}.toast.show{transform:translateX(-50%) translateY(0)}
-@media(max-width:950px){nav{display:none}.menu{display:block}.searchbox{grid-template-columns:1fr 1fr}.grid3,.featuregrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.sreegrid,.investgrid,.contactgrid{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){section{padding:65px 0}.hero{min-height:590px}.hero p{font-size:16px}.searchbox{grid-template-columns:1fr}.statgrid{grid-template-columns:1fr 1fr;gap:22px}.grid3,.featuregrid,.steps{grid-template-columns:1fr}.sreeimg{height:300px}.sree h2,.cta h2{font-size:34px}.ticks{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Property Expert | Open Plots & Investment Properties in Mancherial</title>
+  <meta name="description" content="Explore verified open plots, Kohinoor City Sreegandham plantation plots and Evara Escapes resort plots in Mancherial with Property Expert.">
+  <link rel="canonical" href="https://propertyexpert4u.com/">
+  <meta property="og:title" content="Property Expert | Your Property, Our Expertise">
+  <meta property="og:description" content="Property discovery, document guidance and site-visit support in and around Mancherial.">
+  <meta property="og:url" content="https://propertyexpert4u.com/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#123c29">
+  <style>
+  :root{--green:#123c29;--green2:#1d5d3e;--gold:#d5ad4f;--cream:#f8f6f0;--ink:#18231d;--muted:#5d6b63;--white:#fff;--line:#e7e3d8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}header{position:sticky;top:0;z-index:20;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:22px;font-weight:900;color:var(--green)}.brand span{color:var(--gold)}nav{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:750}.menu{display:none;background:none;border:0;font-size:28px}.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:9px;padding:13px 19px;font-weight:800;cursor:pointer}.gold{background:var(--gold);color:#17130b}.green{background:var(--green);color:#fff}.white{background:#fff;color:var(--green)}.hero{min-height:640px;display:grid;align-items:center;color:#fff;background:linear-gradient(90deg,#071a10e8,#071a1060),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover}.hero-copy{max-width:760px;padding:90px 0}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.5px;color:var(--gold)}h1{font-size:clamp(43px,7vw,76px);line-height:1.02;margin:12px 0 20px}h1 span{color:#edc86d}.lead{font-size:19px;max-width:680px;color:#e7eee9}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}section{padding:82px 0}.heading{text-align:center;max-width:760px;margin:0 auto 40px}.heading h2{font-size:clamp(30px,4vw,42px);line-height:1.15;margin:8px 0}.heading p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 35px #123c2909}.card img{display:block;width:100%;height:230px;object-fit:cover}.card-body{padding:23px}.card h3{font-size:23px;margin:0 0 6px}.location{color:var(--muted);font-size:14px}.price{font-size:19px;font-weight:900;color:var(--green);margin:13px 0}.facts{display:grid;gap:7px;font-size:14px;margin:15px 0 20px}.card-actions{display:flex;gap:9px}.card-actions a{flex:1;text-align:center}.dark{background:linear-gradient(120deg,#0c2f1d,#18583a);color:#fff}.dark .heading p{color:#d5e2da}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{background:#ffffff10;border:1px solid #ffffff25;border-radius:13px;padding:24px}.benefit h3{margin:0 0 7px}.process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;border:1px solid var(--line);padding:22px 14px;border-radius:12px;text-align:center;font-weight:750}.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;margin:0 auto 10px}.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}form{display:grid;gap:12px}input,select,textarea{width:100%;padding:14px;border:1px solid #d8d5cc;border-radius:9px;font:inherit}textarea{min-height:110px;resize:vertical}.info-row{padding:14px 0;border-bottom:1px solid #eee}.note{font-size:12px;color:var(--muted)}footer{background:#092518;color:#cbd7cf;padding:40px 0 20px}.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.legal{font-size:12px;max-width:760px}.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:25px;box-shadow:0 10px 25px #0003}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;background:#fff;padding:10px;z-index:99}
+  @media(max-width:900px){nav{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;align-items:flex-start}.menu{display:block}.grid,.benefits{grid-template-columns:1fr 1fr}.process{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}}
+  @media(max-width:620px){section{padding:62px 0}.hero{min-height:590px}.grid,.benefits,.process{grid-template-columns:1fr}.card-actions{flex-direction:column}.float{width:52px;height:52px}.lead{font-size:16px}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Property Expert","url":"https://propertyexpert4u.com/","telephone":"+91-7981904164","email":"propertyexpert26@gmail.com","areaServed":"Mancherial, Telangana","slogan":"Your Property, Our Expertise."}</script>
 </head>
 <body>
-<header>
-<div class="container nav">
-<a class="logo" href="#">PROPERTY <span>EXPERT</span></a>
-<nav>
-<a href="#projects">Projects</a><a href="#future-city">Future City</a><a href="#why">Why Us</a><a href="#investment">Investment</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a href="https://www.instagram.com/the_real_vivek_narayan?stkn=MTBqZDR6M2JhajJucg==" target="_blank" rel="noopener">Instagram</a>
-<a class="btn btn-green" href="#visit">Book Site Visit</a>
-</nav><div class="menu" onclick="toggleMenu()">☰</div>
-</div>
-</header>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="container nav"><a class="brand" href="#home">PROPERTY <span>EXPERT</span></a><nav id="nav"><a href="#projects">Projects</a><a href="#services">Why Us</a><a href="#process">Process</a><a href="#contact">Contact</a><a class="btn green" href="#contact">Book Site Visit</a></nav><button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button></div></header>
+<main id="main">
+<section class="hero" id="home"><div class="container hero-copy"><div class="eyebrow">MANCHERIAL REAL-ESTATE GUIDANCE</div><h1>Your Property.<br><span>Our Expertise.</span></h1><p class="lead">Discover open plots, plantation land and resort investment opportunities with clear project information, document guidance and on-ground site-visit support.</p><div class="actions"><a class="btn gold" href="#projects">Explore Opportunities</a><a class="btn white" href="#contact">Book a Site Visit</a><a class="btn green" target="_blank" rel="noopener" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20property%20details.">WhatsApp Us</a></div></div></section>
 
-<section class="hero" id="home"><div class="container hero-content">
-<div class="pill">TRUST • TRANSPARENCY • EXPERTISE</div>
-<h1>Your Property.<br><span>Our Expertise.</span></h1>
-<p>Discover carefully selected real-estate projects and investment opportunities with Property Expert — from property discovery to site visits and customer support.</p>
-<div class="actions"><a class="btn btn-gold" href="#projects">Explore Projects</a><a class="btn btn-white" href="#visit">Book a Site Visit</a><a class="btn btn-green" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20am%20interested%20in%20your%20projects." target="_blank">WhatsApp Expert</a></div>
-</div></section>
-
-<div class="container search"><div class="searchbox">
-<input id="q" placeholder="Search project or location">
-<select id="type"><option value="">Property Type</option><option>Open Plot</option><option>Residential</option><option>Farm Land</option><option>Commercial</option></select>
-<select id="budget"><option value="">Budget</option><option value="10">Under ₹10 Lakhs</option><option value="20">Under ₹20 Lakhs</option><option value="50">Under ₹50 Lakhs</option></select>
-<input id="size" placeholder="Plot size e.g. 200 Sq.Yds">
-<button class="btn btn-green" onclick="filterProjects()">Search</button>
-</div></div>
-
-<div class="stats"><div class="container statgrid">
-<div class="stat"><h3>10+</h3><p>Projects</p></div><div class="stat"><h3>500+</h3><p>Customers</p></div><div class="stat"><h3>1000+</h3><p>Acres Developed</p></div><div class="stat"><h3>95%</h3><p>Customer Satisfaction</p></div>
-</div></div>
-
-<section id="projects"><div class="container">
-<div class="heading"><small>OUR PROJECTS</small><h2>Featured Property Opportunities</h2><p>Explore selected projects. Replace the demo project information below with your verified project details.</p></div>
-<div class="grid3" id="projectGrid">
-
-<article class="card project" data-search="dtcp layouts mancherial" data-type="Open Plot" data-price="10">
-<div class="project-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85"></div>
-<div class="body"><h3>DTCP Layouts</h3><div class="loc">📍 Mancherial, Telangana</div><div class="price">Starting ₹5 – 10 Lakhs</div><div class="meta"><span>121–300 Sq.Yds</span><span>Open Plot</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20DTCP%20Layouts%20details." target="_blank">WhatsApp</a></div></div>
-</article>
-
-<article class="card project" data-search="future city mancherial" data-type="Open Plot" data-price="10">
-<div class="project-img"><img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fit=crop&w=1000&q=85"></div>
-<div class="body"><h3>Future City</h3><div class="loc">📍 Mancherial, Telangana</div><div class="price">Starting ₹5 – 10 Lakhs</div><div class="meta"><span>150–400 Sq.Yds</span><span>Open Plot</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Future%20City%20details." target="_blank">WhatsApp</a></div></div>
-</article>
-
-<article class="card project" data-search="sri gandham farming land mancherial green line highway" data-type="Farm Land" data-price="10">
-<div class="project-img"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85"></div>
-<div class="body"><h3>Sri Gandham Farming Land</h3><div class="loc">📍 Mancherial, near Green Line Highway, Telangana</div><div class="price">Starting ₹5 – 10 Lakhs</div><div class="meta"><span>121–500 Sq.Yds</span><span>Farm Land</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Sri%20Gandham%20Farming%20Land%20details." target="_blank">WhatsApp</a></div></div>
-</article>
-
-<article class="card project" data-search="evara escapes resort ventures mancherial" data-type="Resort" data-price="50">
-<div class="project-img"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1000&q=85"></div>
-<div class="body"><h3>Evara Escapes</h3><div class="loc">📍 Mancherial, Telangana</div><div class="price">Starting ₹25 Lakhs</div><div class="meta"><span>Resort Ventures</span><span>Vacation Plots</span></div><div class="cardlinks"><a href="#visit">View Details</a><a href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Evara%20Escapes%20details." target="_blank">WhatsApp</a></div></div>
-</article>
-
+<section id="projects"><div class="container"><div class="heading"><div class="eyebrow">CURRENT OPPORTUNITIES</div><h2>Choose the Property That Fits Your Goal</h2><p>Verified information, guided site visits and assistance from enquiry through registration.</p></div><div class="grid">
+<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=82" alt="Green plantation landscape"><div class="card-body"><h3>Kohinoor City</h3><div class="location">Jaipur village, Jaipur mandal, Mancherial district</div><div class="price">₹7,00,000 per gunta</div><div class="facts"><span>✓ Sreegandham plantation plots from 1 gunta</span><span>✓ 10 plants per gunta with host plants</span><span>✓ Drip irrigation, maintenance and crop-sale support</span><span>✓ Approximately 100 metres from the highway</span></div><div class="card-actions"><a class="btn green" href="#contact">Book Visit</a><a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Kohinoor%20City%20details.">WhatsApp</a></div></div></article>
+<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1000&q=82" alt="Luxury resort swimming pool"><div class="card-body"><h3>Evara Escapes</h3><div class="location">Lemuru village, Mandamarri mandal, Mancherial district</div><div class="price">₹25 lakhs: 5 guntas + cottage</div><div class="facts"><span>✓ 100-acre resort venture with 300 plots</span><span>✓ East- and west-facing five-gunta plots</span><span>✓ 40+ planned amenities and 30-ft BT roads</span><span>✓ MRO and SRO registration options</span></div><div class="card-actions"><a class="btn green" href="#contact">Book Visit</a><a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20Evara%20Escapes%20details.">WhatsApp</a></div></div></article>
+<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=82" alt="Open land suitable for property plots"><div class="card-body"><h3>Local Open Plots</h3><div class="location">In and around Mancherial Municipality</div><div class="price">Options matched to your budget</div><div class="facts"><span>✓ Tell us your preferred area and plot size</span><span>✓ Suitable properties shortlisted for you</span><span>✓ Document and title guidance</span><span>✓ Negotiation and registration assistance</span></div><div class="card-actions"><a class="btn green" href="#contact">Share Requirement</a><a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20am%20looking%20for%20an%20open%20plot%20in%20Mancherial.">WhatsApp</a></div></div></article>
 </div></div></section>
 
-<section class="videosec"><div class="container">
-<div class="heading"><small>WATCH</small><h2>A Quick Look at Property Expert</h2></div>
-<div class="videowrap"><video src="welcome.mp4" autoplay muted loop playsinline controls></video></div>
-</div></section>
+<section class="dark" id="services"><div class="container"><div class="heading"><div class="eyebrow">WHY PROPERTY EXPERT</div><h2>Confidence at Every Step</h2><p>We focus on helping customers understand the opportunity before making a property decision.</p></div><div class="benefits"><div class="benefit"><h3>Requirement-Based Search</h3><p>We begin with your area, budget, plot size and investment purpose.</p></div><div class="benefit"><h3>Clear Project Information</h3><p>Pricing, location, plot details and available documents are explained clearly.</p></div><div class="benefit"><h3>Site-Visit Support</h3><p>Our team coordinates visits and provides on-ground guidance.</p></div><div class="benefit"><h3>Document Guidance</h3><p>We help you understand important property and registration documents.</p></div><div class="benefit"><h3>Negotiation Assistance</h3><p>Support with price discussions and the purchase process.</p></div><div class="benefit"><h3>After-Sales Support</h3><p>Continued assistance after selection and booking.</p></div></div></div></section>
 
-<section class="sree" id="future-city"><div class="container sreegrid">
-<div class="sreeimg"></div><div><small style="color:#e0b75e;font-weight:900;letter-spacing:1.5px">UPCOMING PROJECT</small><h2>Future City</h2><p>Future City is an upcoming open-plot project in a prime Mancherial location, offering strong growth potential with clear project information, location advantages, plot details, pricing and documentation.</p>
-<div class="ticks"><div>✓ Prime Location</div><div>✓ Open Plots 150–400 Sq.Yds</div><div>✓ Site Visit Support</div><div>✓ Documentation Guidance</div></div><a class="btn btn-gold" href="#visit">Enquire About FutureCity Plots</a></div>
-</div></section>
+<section id="process"><div class="container"><div class="heading"><div class="eyebrow">HOW IT WORKS</div><h2>From Requirement to Registration</h2></div><div class="process"><div class="step"><b>1</b>Share Requirement</div><div class="step"><b>2</b>Review Options</div><div class="step"><b>3</b>Visit the Site</div><div class="step"><b>4</b>Verify Documents</div><div class="step"><b>5</b>Purchase Support</div></div></div></section>
 
-<section id="why"><div class="container"><div class="heading"><small>WHY PROPERTY EXPERT</small><h2>Built Around Customer Trust</h2><p>We help customers make informed property decisions with clear information and support.</p></div>
-<div class="featuregrid">
-<div class="feature"><div class="ico">🔍</div><h3>Verified Opportunities</h3><p>Present projects with accurate, verified information.</p></div>
-<div class="feature"><div class="ico">📋</div><h3>Transparency</h3><p>Clear project information, pricing and documentation.</p></div>
-<div class="feature"><div class="ico">👨‍💼</div><h3>Expert Guidance</h3><p>Personal assistance based on your property requirements.</p></div>
-<div class="feature"><div class="ico">📍</div><h3>Site Visits</h3><p>Easy site-visit coordination and on-ground assistance.</p></div>
-<div class="feature"><div class="ico">📑</div><h3>Documentation</h3><p>Guidance to help customers understand important documents.</p></div>
-<div class="feature"><div class="ico">🤝</div><h3>After-Sales Support</h3><p>Continue supporting customers after booking.</p></div>
-</div></div></section>
-
-<section class="invest" id="investment"><div class="container"><div class="heading"><small>PLAN YOUR INVESTMENT</small><h2>Property Investment Calculator</h2><p>Illustrative estimate only — property appreciation is not guaranteed.</p></div>
-<div class="investgrid"><div><h2 style="font-size:42px">Invest with information.<br>Decide with confidence.</h2><p style="margin-top:12px;color:#d5e0d8">Compare property opportunities, understand your budget and visit projects before making a decision.</p></div>
-<div class="investbox"><div class="field"><label>Investment Amount (₹)</label><input id="amount" type="number" value="1000000"></div><div class="field"><label>Estimated Annual Appreciation (%)</label><input id="rate" type="number" value="8"></div><div class="field"><label>Holding Period (Years)</label><input id="years" type="number" value="10"></div><button class="btn btn-green" onclick="calc()">Calculate</button><div class="result">Estimated future value<b id="future">₹21,58,925</b><div class="note">Illustrative calculation. Actual property values may vary.</div></div></div>
-</div></div></section>
-
-<section><div class="container"><div class="heading"><small>YOUR JOURNEY</small><h2>From Enquiry to Ownership</h2></div><div class="steps">
-<div class="step"><div class="num">1</div><h4>Tell Us Your Requirement</h4></div><div class="step"><div class="num">2</div><h4>Explore Properties</h4></div><div class="step"><div class="num">3</div><h4>Site Visit</h4></div><div class="step"><div class="num">4</div><h4>Verify Documents</h4></div><div class="step"><div class="num">5</div><h4>Select Property</h4></div><div class="step"><div class="num">6</div><h4>Booking & Support</h4></div>
-</div></div></section>
-
-<section id="reviews"><div class="container"><div class="heading"><small>CUSTOMER EXPERIENCE</small><h2>Our Customers. Our Reputation.</h2><p>Use genuine customer reviews and photos here.</p></div><div class="grid3">
-<div class="card review"><div class="stars">★★★★★</div><p>“The team explained the project clearly and supported us during the site visit.”</p><div class="person"><small>Hyderabad</small></div></div>
-<div class="card review"><div class="stars">★★★★★</div><p>“Professional communication and helpful property guidance.”</p><div class="person"><small>Karimnagar</small></div></div>
-<div class="card review"><div class="stars">★★★★★</div><p>“Good support and clear communication throughout the enquiry.”</p><div class="person"><small>Telangana</small></div></div>
-</div></div></section>
-
-<section><div class="container"><div class="cta"><h2>Looking for the Right Property?</h2><p>Tell us your budget and requirements. Our team will help you explore suitable opportunities.</p><a class="btn btn-gold" href="#visit">Get Property Assistance</a></div></div></section>
-
-<section id="contact"><div class="container"><div class="heading"><small>CONTACT PROPERTY EXPERT</small><h2>Book Your Site Visit</h2><p>Send your requirement and our team will contact you.</p></div>
-<div class="contactgrid">
-<div class="contactbox" id="visit"><form onsubmit="submitLead(event)"><input id="name" required placeholder="Your Name"><input id="phone" required placeholder="Mobile Number" type="tel"><input id="email" placeholder="Email Address" type="email"><select id="project"><option>DTCP Layouts</option><option>Future City</option><option>Sri Gandham Farming Land</option><option>Evara Escapes</option></select><input id="date" type="date"><textarea id="message" placeholder="Your requirements"></textarea><button class="btn btn-green">Submit & WhatsApp</button></form></div>
-<div class="contactbox contactinfo"><h3>PROPERTY EXPERT</h3><div><strong>📞 Phone</strong><a href="tel:+917981904164">7981904164</a></div><div><strong>💬 WhatsApp</strong><a href="https://wa.me/917981904164" target="_blank">Chat with Property Expert</a></div><div><strong>✉ Email</strong><a href="mailto:propertyexpert26@gmail.com">propertyexpert26@gmail.com</a></div><div><strong>📍 Service Area</strong>Telangana</div></div>
-</div></div></section>
-
-<footer><div class="container"><div class="footgrid"><div><h3>PROPERTY EXPERT</h3><p>Your Property, Our Expertise.</p><p style="margin-top:8px;font-size:12px">Discover. Verify. Invest. Grow.</p></div><div><h3>Explore</h3><a href="#projects">Projects</a><a href="#future-city">Future City</a><a href="#investment">Investment</a></div><div><h3>Support</h3><a href="#visit">Site Visit</a><a href="#reviews">Customer Reviews</a><a href="#contact">Contact</a></div><div><h3>Legal</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div></div><div class="bottom">© 2026 Property Expert. All Rights Reserved. Property prices, availability and project information are subject to change. Verify applicable approvals and documents before purchase.</div></div></footer>
-<div class="floatgroup">
-<a class="float insta-float" href="https://www.instagram.com/the_real_vivek_narayan?stkn=MTBqZDR6M2JhajJucg==" target="_blank" rel="noopener" aria-label="Instagram"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="6" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="#fff"/></svg></a>
-<a class="float" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20property%20details." target="_blank">☏</a>
-</div>
-<div class="toast" id="toast">Request prepared. Opening WhatsApp…</div>
-
+<section id="contact"><div class="container"><div class="heading"><div class="eyebrow">CONTACT PROPERTY EXPERT</div><h2>Book Your Site Visit</h2><p>Submit your details to prepare a WhatsApp enquiry.</p></div><div class="contact"><div class="box"><form id="lead"><label>Your name<input id="name" required autocomplete="name"></label><label>Mobile number<input id="phone" required type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" placeholder="10-digit Indian mobile number"></label><label>Interested in<select id="project"><option>Kohinoor City</option><option>Evara Escapes</option><option>Local Open Plots</option></select></label><label>Preferred visit date<input id="date" type="date"></label><label>Your requirement<textarea id="message" placeholder="Preferred area, budget or plot size"></textarea></label><button class="btn green" type="submit">Continue on WhatsApp</button><div class="note">Submitting opens WhatsApp with your enquiry. Property Expert does not promise guaranteed appreciation or returns.</div></form></div><div class="box"><h3>PROPERTY EXPERT</h3><div class="info-row"><strong>Phone</strong><br><a href="tel:+917981904164">+91 79819 04164</a></div><div class="info-row"><strong>WhatsApp</strong><br><a target="_blank" rel="noopener" href="https://wa.me/917981904164">Chat with Property Expert</a></div><div class="info-row"><strong>Email</strong><br><a href="mailto:propertyexpert26@gmail.com">propertyexpert26@gmail.com</a></div><div class="info-row"><strong>Service area</strong><br>Mancherial and surrounding areas, Telangana</div></div></div></div></section>
+</main>
+<footer><div class="container foot"><div><strong>PROPERTY EXPERT</strong><br>Your Property, Our Expertise.</div><div class="legal">Project prices, availability, amenities, timelines, rental arrangements and other information may change. Buyers should independently verify title, approvals, registration type, agreements and all applicable documents before purchase. Images are representative until original project photography is supplied.</div><div>© 2026 Property Expert</div></div></footer>
+<a class="float" aria-label="WhatsApp Property Expert" target="_blank" rel="noopener" href="https://wa.me/917981904164?text=Hi%20Property%20Expert%2C%20I%20want%20property%20details.">✆</a>
 <script>
-function calc(){const a=+document.getElementById('amount').value||0,r=+document.getElementById('rate').value||0,y=+document.getElementById('years').value||0;const v=a*Math.pow(1+r/100,y);document.getElementById('future').textContent='₹'+Math.round(v).toLocaleString('en-IN')}
-function filterProjects(){const q=document.getElementById('q').value.toLowerCase(),t=document.getElementById('type').value,b=+document.getElementById('budget').value||0;document.querySelectorAll('.project').forEach(p=>{const okQ=!q||p.dataset.search.includes(q),okT=!t||p.dataset.type===t,okB=!b||+p.dataset.price<=b;p.style.display=okQ&&okT&&okB?'block':'none'});document.getElementById('projects').scrollIntoView({behavior:'smooth'})}
-function submitLead(e){e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,em=document.getElementById('email').value,pr=document.getElementById('project').value,d=document.getElementById('date').value,m=document.getElementById('message').value;const msg=`Hi Property Expert,%0A%0ASite Visit / Property Enquiry%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AEmail: ${encodeURIComponent(em)}%0AProject: ${encodeURIComponent(pr)}%0ADate: ${encodeURIComponent(d)}%0ARequirements: ${encodeURIComponent(m)}`;document.getElementById('toast').classList.add('show');setTimeout(()=>{document.getElementById('toast').classList.remove('show');window.open('https://wa.me/917981904164?text='+msg,'_blank')},500)}
-function toggleMenu(){const n=document.querySelector('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='76px';n.style.left='0';n.style.right='0';n.style.background='#fff';n.style.padding='20px';n.style.flexDirection='column';n.style.alignItems='flex-start'}
-calc();
-</script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const open=getComputedStyle(nav).display==='flex';nav.style.display=open?'none':'flex';menu.setAttribute('aria-expanded',String(!open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=900){nav.style.display='none';menu.setAttribute('aria-expanded','false')}}));document.getElementById('lead').addEventListener('submit',e=>{e.preventDefault();if(!e.currentTarget.reportValidity())return;const val=id=>document.getElementById(id).value.trim();const text=`Hi Property Expert,\n\nProperty / Site Visit Enquiry\nName: ${val('name')}\nPhone: ${val('phone')}\nProject: ${val('project')}\nPreferred date: ${val('date')||'Not selected'}\nRequirement: ${val('message')||'Not specified'}`;window.open('https://wa.me/917981904164?text='+encodeURIComponent(text),'_blank','noopener')});
+  </script>
 </body>
 </html>
