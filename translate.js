@@ -37,13 +37,35 @@
     if (select) select.value = link.dataset.project;
   }));
 
-  document.querySelectorAll('[data-dialog]').forEach(button => button.addEventListener('click', () => {
-    document.getElementById(button.dataset.dialog).showModal();
+  const legalDialogIds = ['terms', 'privacy', 'disclaimer'];
+  function openLegalDialog(id, updateUrl = false) {
+    if (!legalDialogIds.includes(id)) return;
+    const dialog = document.getElementById(id);
+    if (!dialog.open) dialog.showModal();
+    if (updateUrl && location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
+  }
+  function openDialogFromUrl() {
+    openLegalDialog(location.hash.slice(1));
+  }
+  document.querySelectorAll('[data-dialog]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    openLegalDialog(link.dataset.dialog, true);
   }));
-  document.querySelectorAll('.close').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
-  document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', event => {
-    if (event.target === dialog) dialog.close();
+  document.querySelectorAll('.close').forEach(button => button.addEventListener('click', () => {
+    const dialog = button.closest('dialog');
+    dialog.close();
+    if (location.hash === `#${dialog.id}`) history.replaceState(null, '', location.pathname + location.search);
   }));
+  document.querySelectorAll('dialog').forEach(dialog => {
+    dialog.addEventListener('click', event => {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+      if (location.hash === `#${dialog.id}`) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+  window.addEventListener('hashchange', openDialogFromUrl);
+  openDialogFromUrl();
 
   document.getElementById('lead').addEventListener('submit', event => {
     event.preventDefault();
