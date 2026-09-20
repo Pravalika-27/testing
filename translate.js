@@ -6,11 +6,11 @@
     'Projects':'ప్రాజెక్టులు','Why Us':'మమ్మల్ని ఎందుకు ఎంచుకోవాలి','How It Works':'మా విధానం','Contact':'సంప్రదించండి','Book Site Visit':'సైట్ విజిట్ బుక్ చేయండి',
     'Trusted local property guidance':'నమ్మకమైన స్థానిక ప్రాపర్టీ మార్గదర్శనం',
     'Find the Right Property':'సరైన ప్రాపర్టీని కనుగొనండి','in Mancherial':'మంచిర్యాలలో',
-    'Explore ':'తెలుసుకోండి ','Plantation Ventures, Resort Ventures, and Local Plots in Mancherial':'మంచిర్యాలలోని ప్లాంటేషన్ వెంచర్లు, రిసార్ట్ వెంచర్లు మరియు లోకల్ ప్లాట్లు',
-    ' with clear property information, guided site visits, and end-to-end purchase support.':' — స్పష్టమైన ప్రాపర్టీ సమాచారం, గైడెడ్ సైట్ విజిట్లు మరియు కొనుగోలు ప్రారంభం నుంచి రిజిస్ట్రేషన్ వరకు పూర్తి సహాయంతో.',
-    'Plantation Plots':'ప్లాంటేషన్ ప్లాట్లు','Resort Plots':'రిసార్ట్ ప్లాట్లు','Open Plots':'ఓపెన్ ప్లాట్లు','View Property':'ప్రాపర్టీ చూడండి',
+    'Explore':'తెలుసుకోండి','Plantation Ventures, Resort Ventures, and Local Plots in Mancherial':'మంచిర్యాలలోని ప్లాంటేషన్ వెంచర్లు, రిసార్ట్ వెంచర్లు మరియు లోకల్ ప్లాట్లు',
+    'with clear property information, guided site visits, and end-to-end purchase support.':'— స్పష్టమైన ప్రాపర్టీ సమాచారం, గైడెడ్ సైట్ విజిట్లు మరియు కొనుగోలు ప్రారంభం నుంచి రిజిస్ట్రేషన్ వరకు పూర్తి సహాయంతో.',
+    'Plantation Plots':'ప్లాంటేషన్ ప్లాట్లు','Resort Plots':'రిసార్ట్ ప్లాట్లు','Open Plots':'ఓపెన్ ప్లాట్లు','View Property':'ప్రాపర్టీ చూడండి','Location':'ప్రాంతం','Project':'ప్రాజెక్ట్',
     'Mancherial and nearby areas':'మంచిర్యాల మరియు పరిసర ప్రాంతాలు','Jaipur, Mancherial':'జైపూర్, మంచిర్యాల','Lemuru, Mandamarri':'లేమూరు, మందమర్రి',
-    'Explore your options':'మీ ఎంపికలను చూడండి','What are you looking for?':'మీరు ఏ ప్రాపర్టీ కోసం చూస్తున్నారు?','Start with the property type that matches your budget and investment goal.':'మీ బడ్జెట్ మరియు పెట్టుబడి లక్ష్యానికి సరిపోయే ప్రాపర్టీ రకాన్ని ఎంచుకోండి.',
+    'Explore your options':'మీ ఎంపికలను చూడండి','What are you looking for?':'మీరు ఏ ప్రాపర్టీ కోసం చూస్తున్నారు?','Start with the property type that matches your budget and investment goal.':'మీ బడ్జెట్ మరియు పెట్టుబడి లక్ష్యానికి సరిపోయే ప్రాపర్టీ రకాన్ని ఎంచుకోండి.','Kohinoor City':'కోహినూర్ సిటీ','Evara Escapes':'ఎవారా ఎస్కేప్స్',
     'Plantation Land':'ప్లాంటేషన్ భూమి','View Kohinoor City details':'కోహినూర్ సిటీ వివరాలు చూడండి','View Evara Escapes details':'ఎవారా ఎస్కేప్స్ వివరాలు చూడండి','Local Open Plots':'లోకల్ ఓపెన్ ప్లాట్లు','View our local plot service':'మా లోకల్ ప్లాట్ల సేవ చూడండి','Document Guidance':'డాక్యుమెంట్ మార్గదర్శనం','See how our guidance works':'మా మార్గదర్శనం ఎలా పనిచేస్తుందో చూడండి',
     'Featured opportunities':'ప్రత్యేక ప్రాపర్టీ అవకాశాలు','Properties Selected for Your Goals':'మీ లక్ష్యాలకు సరిపోయే ప్రాపర్టీలు','Compare the key details, then speak with our team or schedule a site visit.':'ముఖ్య వివరాలను పోల్చి చూసి, మా టీమ్‌తో మాట్లాడండి లేదా సైట్ విజిట్ బుక్ చేయండి.','Tell Us Your Requirement':'మీ అవసరాన్ని తెలియజేయండి',
     'PLANTATION VENTURE':'ప్లాంటేషన్ వెంచర్','Jaipur village, Jaipur mandal, Mancherial district':'జైపూర్ గ్రామం, జైపూర్ మండలం, మంచిర్యాల జిల్లా','₹7,00,000 / gunta':'₹7,00,000 / గుంట','Plots start from 1 gunta':'ప్లాట్లు 1 గుంట నుంచి ప్రారంభం','10 Sreegandham plants per gunta':'ప్రతి గుంటకు 10 శ్రీగంధం మొక్కలు','Drip irrigation and maintenance support':'డ్రిప్ ఇరిగేషన్ మరియు మెయింటెనెన్స్ సహాయం','Approx. 100 metres from highway':'హైవే నుంచి సుమారు 100 మీటర్లు','Get Details':'వివరాలు పొందండి',
@@ -19,7 +19,7 @@
     'Why Property Expert':'ప్రాపర్టీ ఎక్స్‌పర్ట్ ఎందుకు','Local Guidance. Clear Decisions.':'స్థానిక మార్గదర్శనం. స్పష్టమైన నిర్ణయాలు.','Understand the property, visit the site and review the purchase process before you decide.':'నిర్ణయం తీసుకునే ముందు ప్రాపర్టీని అర్థం చేసుకోండి, సైట్‌ను సందర్శించండి మరియు కొనుగోలు ప్రక్రియను పరిశీలించండి.','Requirement First':'ముందుగా మీ అవసరం','Your area, budget and purpose guide our recommendations.':'మీ ప్రాంతం, బడ్జెట్ మరియు అవసరం ఆధారంగా మేము ప్రాపర్టీలను సూచిస్తాము.','We explain available title, registration and project documents. Buyers should also obtain independent legal verification before purchase.':'అందుబాటులో ఉన్న టైటిల్, రిజిస్ట్రేషన్ మరియు ప్రాజెక్ట్ డాక్యుమెంట్లను మేము వివరిస్తాము. కొనుగోలు ముందు స్వతంత్ర న్యాయ నిపుణుడితో ధృవీకరించుకోవాలి.','Guided Site Visits':'గైడెడ్ సైట్ విజిట్లు','Coordinated visits with on-ground assistance.':'సైట్ వద్ద మా టీమ్ సహాయంతో సమన్వయపూర్వక విజిట్లు.','Purchase Support':'కొనుగోలు సహాయం','Help with negotiation, documents and registration.':'ధర చర్చలు, డాక్యుమెంట్లు మరియు రిజిస్ట్రేషన్‌లో సహాయం.',
     'Simple process':'సులభమైన విధానం','From Requirement to Registration':'అవసరం నుంచి రిజిస్ట్రేషన్ వరకు','Share Requirement':'మీ అవసరం చెప్పండి','Review Options':'ఎంపికలను పరిశీలించండి','Visit the Site':'సైట్‌ను సందర్శించండి','Verify Documents':'డాక్యుమెంట్లు ధృవీకరించండి',
     'Contact Property Expert':'ప్రాపర్టీ ఎక్స్‌పర్ట్‌ను సంప్రదించండి','Book Your Site Visit':'మీ సైట్ విజిట్ బుక్ చేయండి','Share your details and continue directly on WhatsApp.':'మీ వివరాలు ఇచ్చి నేరుగా వాట్సాప్‌లో కొనసాగండి.','Your name':'మీ పేరు','Mobile number':'మొబైల్ నంబర్','Interested in':'ఆసక్తి ఉన్న ప్రాజెక్ట్','Preferred visit date':'కావాల్సిన విజిట్ తేదీ','Your requirement':'మీ అవసరం','Continue on WhatsApp':'వాట్సాప్‌లో కొనసాగండి','Property Expert does not promise guaranteed appreciation or returns.':'ప్రాపర్టీ ఎక్స్‌పర్ట్ భూమి విలువ పెరుగుదల లేదా రాబడులకు హామీ ఇవ్వదు.','Phone':'ఫోన్','WhatsApp':'వాట్సాప్','Chat with Property Expert':'ప్రాపర్టీ ఎక్స్‌పర్ట్‌తో చాట్ చేయండి','Email':'ఈమెయిల్','Service area':'సేవా ప్రాంతం','Mancherial and nearby areas':'మంచిర్యాల మరియు పరిసర ప్రాంతాలు',
-    'Terms & Conditions':'నిబంధనలు మరియు షరతులు','Privacy Policy':'గోప్యతా విధానం','Property Disclaimer':'ప్రాపర్టీ డిస్క్లైమర్',
+    'Terms & Conditions':'నిబంధనలు మరియు షరతులు','Privacy Policy':'గోప్యతా విధానం','Property Disclaimer':'ప్రాపర్టీ డిస్క్లైమర్','Close':'మూసివేయండి','WhatsApp Property Expert':'ప్రాపర్టీ ఎక్స్‌పర్ట్‌కు వాట్సాప్ చేయండి','Property Expert — Your Property, Our Expertise':'ప్రాపర్టీ ఎక్స్‌పర్ట్ — మీ ప్రాపర్టీ, మా నైపుణ్యం','Kohinoor City plantation':'కోహినూర్ సిటీ ప్లాంటేషన్','Resort pool':'రిసార్ట్ స్విమ్మింగ్ పూల్','Open plots':'ఓపెన్ ప్లాట్లు','Sreegandham plantation':'శ్రీగంధం ప్లాంటేషన్','Sreegandham saplings':'శ్రీగంధం మొక్కలు','Young plantation':'యువ ప్లాంటేషన్',
     'Effective: September 2026':'అమలులోకి వచ్చిన తేదీ: సెప్టెంబర్ 2026','Property information':'ప్రాపర్టీ సమాచారం','Customer responsibility':'కస్టమర్ బాధ్యత','Website use':'వెబ్‌సైట్ వినియోగం','How information is used':'సమాచారాన్ని ఎలా ఉపయోగిస్తాము','Third-party services':'మూడవ పక్ష సేవలు','Your choice':'మీ ఎంపిక','No guaranteed returns':'హామీతో కూడిన రాబడులు లేవు','Independent verification':'స్వతంత్ర ధృవీకరణ','Latest information':'తాజా సమాచారం',
     'By using this website, you agree to use its information only for lawful property-enquiry purposes. Website information is introductory and does not create a sale agreement, booking confirmation, legal opinion or investment guarantee.':'ఈ వెబ్‌సైట్ సమాచారాన్ని చట్టబద్ధమైన ప్రాపర్టీ విచారణ కోసం మాత్రమే ఉపయోగించేందుకు మీరు అంగీకరిస్తారు. ఇందులోని సమాచారం ప్రాథమిక అవగాహన కోసం మాత్రమే; ఇది అమ్మకపు ఒప్పందం, బుకింగ్ నిర్ధారణ, న్యాయ సలహా లేదా పెట్టుబడి హామీ కాదు.',
     'Prices, availability, plot sizes, amenities, payment schedules and project details may change. Final terms are those written in the applicable booking form, sale agreement and registration documents.':'ధరలు, లభ్యత, ప్లాట్ సైజులు, సౌకర్యాలు, చెల్లింపు షెడ్యూల్ మరియు ప్రాజెక్ట్ వివరాలు మారవచ్చు. బుకింగ్ ఫారం, సేల్ అగ్రిమెంట్ మరియు రిజిస్ట్రేషన్ డాక్యుమెంట్లలో ఉన్న నిబంధనలే తుది నిబంధనలు.',
@@ -71,6 +71,12 @@
   ];
   placeholders.forEach(([selector]) => { const el=document.querySelector(selector); if(el) el.dataset.englishPlaceholder=el.placeholder; });
 
+  const translatedAttributes = [...document.querySelectorAll('[aria-label], img[alt]')].map(el => ({
+    el,
+    aria: el.getAttribute('aria-label'),
+    alt: el.getAttribute('alt')
+  }));
+
   function applyLanguage(lang) {
     textNodes.forEach(node => {
       const original = node._english;
@@ -81,6 +87,19 @@
     });
     placeholders.forEach(([selector,telugu]) => {
       const el=document.querySelector(selector); if(el) el.placeholder=lang==='te'?telugu:(el.dataset.englishPlaceholder||'');
+    });
+    translatedAttributes.forEach(({el,aria,alt}) => {
+      if (aria !== null) el.setAttribute('aria-label', lang === 'te' ? (te[aria] || aria) : aria);
+      if (alt !== null) el.setAttribute('alt', lang === 'te' ? (te[alt] || alt) : alt);
+    });
+    document.querySelectorAll('a[href*="wa.me/917981904164?text="]').forEach(link => {
+      if (!link.dataset.englishHref) link.dataset.englishHref = link.href;
+      if (lang === 'en') { link.href = link.dataset.englishHref; return; }
+      const title = link.closest('article')?.querySelector('h3')?.textContent.trim();
+      const message = title
+        ? `హాయ్ ప్రాపర్టీ ఎక్స్‌పర్ట్, నాకు ${title} వివరాలు కావాలి.`
+        : 'హాయ్ ప్రాపర్టీ ఎక్స్‌పర్ట్, నాకు ప్రాపర్టీ వివరాలు కావాలి.';
+      link.href = 'https://wa.me/917981904164?text=' + encodeURIComponent(message);
     });
     toggle.textContent = lang === 'te' ? 'English' : 'తెలుగు';
     toggle.setAttribute('aria-label', lang === 'te' ? 'Switch website to English' : 'వెబ్‌సైట్‌ను తెలుగులోకి మార్చండి');
